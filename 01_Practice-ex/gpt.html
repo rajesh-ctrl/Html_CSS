@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Frontend</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <button id="click-me-button">Click me!</button>
+  
+  <style>
+    /* Your CSS goes here */
+    body {
+      background-color: white;
+      color: black;
+      font-family: sans-serif;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkblue;
+    }
+  </style>
+  
+  <script>
+    // Your JavaScript goes here
+    // Select the button element
+    const button = document.querySelector('#click-me-button');
+
+    // Add a click event listener to the button
+    button.addEventListener('click', () => {
+      // When the button is clicked, change the text of the button
+      button.textContent = 'You clicked me!';
+      
+    });
+  </script>
+</body>
+</html>

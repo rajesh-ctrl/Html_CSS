@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Youtube</title>
+        <link rel="stylesheet" href="intro-to-html/styles/buttons.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        
+        <style>
+
+            
+            .box {
+                width: 60px;
+                height: 60px;
+                display: inline-block;
+                background-color: green;
+                border-radius: 30px;
+            }
+
+            .yesno {
+             
+                display: inline-block;
+                height: 90px;
+                width: 250px;
+                border-style: solid;
+                text-align: start;
+                padding-left: 10px;
+                border-width: 0.1px;
+                border-color: lightgray;
+            }
+
+            .ex3 {
+                display: flex;
+                flex-grow: 1;
+                margin: 0px;
+                width: 460px;
+
+                background-color: rgb(40, 43, 48);
+                display: inline-block;
+                padding-left: 15px;
+                padding-right: 20px;
+                height: 120px;
+                font-size: 14px;
+             }
+
+            .install {
+                margin: 10px;
+                padding-top: 10px;
+
+                font-size: 28px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .add {
+                margin: 10px;
+                font-size: 20px;
+                width: 440px;
+                color: rgb(94, 103, 112);
+                padding-bottom: 10px;
+            }
+            .ex3:hover{
+            box-shadow: 0px 0px 15px aquamarine;
+            }
+
+            .post {
+                box-shadow: 0px 0px 8px aquamarine;
+                display: inline-block;
+                vertical-align:top;
+                margin: none;
+                padding: 10px;
+                width: 410px;
+                height: 60px;
+            }
+            .photo{
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                object-fit: cover;
+                background-color: greenyellow;
+               background: -moz-linear-gradient(); */
+            }
+            .status {
+                
+                outline: none;
+                margin-top: 10px;
+                display: inline-flexbox;
+                margin-left: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                font-size: large;
+
+                margin-top: 15px;
+                vertical-align: top;
+                color: gray;
+                padding-top: 30px;
+                border: none;
+                border-color: white;
+                text-align: start;
+                
+            
+            }
+            .tweet-button {
+                
+                letter-spacing: 0.3px;
+                font-weight: bold;
+                
+                display: inline-block;
+                vertical-align: top;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
+                text-align: center;
+                align-content: center;
+                transition: opacity 150ms, shadow 150ms;
+                margin-top: 10px;
+                margin-right: 0px;
+                margin-left: 32px;
+
+            }
+            body {background-color: black} 
+                ::content
+
+
+            p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-family: Roboto, Arial;
+            }
+
+            .thumbnail {
+                width: 300px;
+                vertical-align: middle;
+                display: block;
+            }
+
+            .search-bar {
+                display: block;
+                columns: 0;
+                font-family: Candara;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color: gray;
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 12px;
+
+                border-radius: 10px;
+                border-style: none;
+                border-width: 0px; 
+                border-color: blue;
+                box-shadow: 0px 0px 5px 1px #d3d3d3;
+                
+            }
+
+            .video-title {
+                margin-top: 0px;
+                font-size: 17px;
+                font-weight: 600;
+                line-height: 20px;
+                margin-bottom: 12px;
+            }
+
+            .video-author,.video-stats {
+                display: inline-flexbox;
+            
+            }
+            .video-preview {
+                cursor: pointer;
+                font-family: Arial;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+                margin-bottom: 5px;
+                transition:box-shadow 0.15s;
+            }
+            .video-preview:hover{
+            box-shadow: 0px 0px 10px 0.1px aquamarine ;
+            }
+
+            .profile-picture {
+                width: 100%;
+                border-radius: 50%;
+            }
+
+            .channel-picture {
+                display: inline-block;
+                width:50px;
+                vertical-align: top;
+            }
+
+            .video-info {
+                display: inline-block;
+                width: 220px;
+            }
+
+            .thumbnail-row {
+                margin-bottom: 12px;
+            }
+
+            .video-author,.video-stats {
+                font-size: 15px;
+                color: rgb(96,96,96);
+            }
+
+            .video-author {
+                margin-bottom: 5px;
+            }
+
+            
+        </style>
+    </head>
+
+
+    <body>
+
+        <input class="search-bar" type="text", placeholder="Search"> 
+
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="webp">
+            </div>
+                
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="profile_pic/channel-1.jpeg" alt="jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title"> Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p> 
+                </div>    
+             </div>  
+        </div>
+
+        <div class="video-preview">
+            
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="webp">
+            
+            
+            <p class="video-title"><strong> Try Not To Laugh Challenge #9</strong></p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">9M views &#183; 4 years ago</p> 
+        </div>
+
+        <div class="video-preview">
+            
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="webp">
+            
+            
+            <p class="video-title"><strong> Talking Tech and AI with Google CEO Sundar Pichai!</strong></p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p> 
+        </div>
+
+
+
+
+        <div class="box"></div>
+        <div class="yesno">
+            <p>Satisfied with our service?</p>
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+
+        <div class="ex3">
+            <p class="install">Install YouTube Music</p>
+            <p class="add">Add YouTube Music to your desktop for quick and easy access</p>
+        </div> 
+
+        <div class="post">
+            
+            <img class="photo" src="thumbnails/Screenshot 2022-12-19 155046_copy.webp" alt="webp">
+
+            <t class="status">What's happening?</p>
+            <input class="status" type="text", placeholder="What's happening?"> 
+            <button class="tweet-button">Tweet</button>
+        </div> 
+
+
+    </body>
+</html>

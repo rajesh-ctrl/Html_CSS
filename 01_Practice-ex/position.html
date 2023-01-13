@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Practice</title>
+</head>
+<body style="height: 3000px;
+  padding-top: 60px;
+  padding-left: 80px;">
+
+  <div style="background-color: black; color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 100;">
+  Header
+  </div>
+
+  <div style= "background-color: green;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  "
+  >sidebar</div>
+
+
+
+  <div style="background-color: lightblue;
+  height: 200px; width: 200px;
+  position: static;
+
+  ">
+  div1
+  </div> 
+
+  <div style= "background-color: lightpink;
+  height: 200px; width: 200px;
+  position: relative;
+  ">
+  div2
+    
+    <div style="position: absolute; right: 10px; bottom: 10px;">
+      5.00
+    </div>
+  </div>
+
+
+    
+
+
+  <div style="position: absolute;
+  background-color: red;
+  color: white;
+  top: 60px;
+  right: 10px;
+
+  ">
+    absolute
+  </div>
+  <!-- pos fixed = elements are placed in the browser window -->
+  <!-- pos absolute = elements are placed on the page -->
+  <!-- pos relative = elements that are displayed normally/scrolls with the page -->
+
+  <!-- usually "pos absolute" is used inside pos relative and pos fixed, depending whether
+  it is needed in the page or in the window -->
+
+  <div style="position: relative;
+  background-color: red;
+  color: white;
+  top: 60px;
+  right: 10px;
+
+  ">
+    relative
+      <div style="position: absolute;
+    background-color: black;
+    color: white;
+    top: 0px;
+    right: 180px;
+
+    ">
+      absolute
+      </div>
+  </div>
+
+  <div style="position: fixed;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  width: 150px;
+  background-color: aqua;
+  ">fixed element
+  
+  <div style="position: absolute;
+  background-color: blue;
+  color: white;
+  top: 50px;
+  height: 100px;
+
+  ">
+  new absolute elements
+  </div>
+  </div>
+
+
+  <div style="display: absolute;
+    top: 0;
+    right: 0;"> X 
+    </div>
+
+</body>
+</html>
